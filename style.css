@@ -1,0 +1,1263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #E1EFF6;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header img {
+  width: 110px;
+}
+header .hamburger {
+  padding: 20px 35px 20px 6px;
+  position: relative;
+  cursor: pointer;
+}
+header .hamburger span {
+  width: 30px;
+  height: 3px;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+}
+header .hamburger span:before {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  content: "";
+  position: absolute;
+  top: -13px;
+}
+header .hamburger span:after {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  content: "";
+  position: absolute;
+  top: 13px;
+}
+header .menu {
+  text-align: end;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 900ms;
+}
+header .menu li a {
+  text-decoration: none;
+  color: black;
+  padding: -5px;
+  display: block;
+  font-size: 15px;
+}
+header .active {
+  max-height: 500px;
+}
+
+.banner .text h1 {
+  color: red;
+  font-size: 32px;
+  margin-left: 14%;
+  font-family: bold;
+  line-height: 40px;
+  margin-top: 20%;
+  position: relative;
+  z-index: 999;
+}
+.banner .text .btn1 {
+  position: relative;
+  z-index: 999;
+  font-family: bold;
+  margin-left: 7%;
+  margin-top: 30px;
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 7px;
+  font-size: 20px;
+}
+.banner .text .btn2 {
+  position: relative;
+  z-index: 999;
+  margin-left: 7px;
+  background-color: white;
+  border: none;
+  padding: 7px;
+  font-family: bold;
+  font-size: 20px;
+}
+.banner .picture .bnnr {
+  margin-left: 1%;
+  margin-top: -65%;
+  width: 100%;
+}
+
+.built {
+  margin-top: 5%;
+}
+.built h3 {
+  font-size: 35px;
+  text-align: center;
+  font-family: bold;
+  margin-top: 46px;
+}
+.built .pix1 {
+  margin-left: 5px;
+  margin-top: 30px;
+}
+.built .pix2 {
+  margin-top: 30px;
+  margin-left: 5px;
+}
+
+.founder {
+  background-color: white;
+  padding-top: 5%;
+}
+.founder h3 {
+  font-size: 35px;
+  margin-left: 8%;
+  font-family: bold;
+  margin-bottom: 17px;
+}
+.founder .row {
+  margin-top: 35px;
+}
+.founder .row p {
+  margin-bottom: 70px;
+}
+.founder .slide .pt {
+  margin-bottom: 70px;
+  font-family: regular;
+  margin-left: 65px;
+}
+.founder .slide .dis {
+  background-color: white;
+  color: black;
+  position: relative;
+  margin-top: -9%;
+  left: 40%;
+  padding: 12px;
+  font-family: bold;
+  border: none;
+  border-radius: 5px;
+}
+.founder .slide .dis .arow {
+  position: absolute;
+  left: 66px;
+  top: 6px;
+}
+.founder .slide .dis:hover {
+  box-shadow: 2px 2px 2px 2px lightgray;
+  transition: 1s;
+  opacity: 1;
+}
+.founder .slide .pw {
+  margin-bottom: 70px;
+  font-family: regular;
+  margin-left: 65px;
+}
+.founder .slide .disc {
+  background-color: white;
+  color: black;
+  position: relative;
+  margin-top: -9%;
+  left: 40%;
+  padding: 12px;
+  font-family: bold;
+  border: none;
+  border-radius: 5px;
+}
+.founder .slide .disc .arow-2 {
+  position: absolute;
+  left: 66px;
+  top: 6px;
+}
+.founder .slide .disc:hover {
+  box-shadow: 2px 2px 2px 2px lightgray;
+  transition: 1s;
+  opacity: 1;
+}
+.founder .slide .pe {
+  margin-bottom: 70px;
+  font-family: regular;
+  margin-left: 65px;
+}
+.founder .slide .disco {
+  background-color: white;
+  color: black;
+  position: relative;
+  margin-top: -9%;
+  left: 40%;
+  padding: 12px;
+  font-family: bold;
+  border: none;
+  border-radius: 5px;
+}
+.founder .slide .disco .arow-3 {
+  position: absolute;
+  left: 67px;
+  top: 6px;
+}
+.founder .slide .disco:hover {
+  box-shadow: 2px 2px 2px 2px lightgray;
+  transition: 1s;
+  opacity: 1;
+}
+.founder .slide .pr {
+  margin-bottom: 70px;
+  font-family: regular;
+  margin-left: 65px;
+}
+.founder .slide .discov {
+  background-color: white;
+  color: black;
+  position: relative;
+  margin-top: -9%;
+  left: 40%;
+  padding: 10px;
+  font-family: bold;
+  border: none;
+  border-radius: 5px;
+}
+.founder .slide .discov .arow-4 {
+  position: absolute;
+  left: 67px;
+  top: 6px;
+}
+.founder .slide .discov:hover {
+  box-shadow: 2px 2px 2px 2px lightgray;
+  transition: 1s;
+  opacity: 1;
+}
+
+.join {
+  margin-bottom: 50px;
+}
+.join .pic {
+  width: 80%;
+  margin-left: 40px;
+  margin-top: -40px;
+}
+.join h4 {
+  font-size: 40px;
+  font-family: bold;
+  margin-top: 6%;
+  margin-left: 82px;
+}
+.join p {
+  font-size: 30px;
+  font-family: bold;
+  margin-top: 20px;
+  padding-left: 43px;
+}
+.join .btn {
+  font-family: bold;
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 119px;
+}
+
+.investor {
+  background-color: white;
+}
+.investor .pixs {
+  width: 85%;
+  margin-top: 40px;
+  margin-left: 28px;
+}
+.investor h4 {
+  font-size: 45px;
+  margin-top: 16%;
+  margin-left: 15%;
+  font-family: bold;
+}
+.investor p {
+  margin-left: 6%;
+  font-family: bold;
+  margin-top: 30px;
+  font-size: 28px;
+}
+.investor .btn {
+  font-size: 20px;
+  margin-left: 31%;
+  background-color: black;
+  color: white;
+  font-family: bold;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.Questions h4 {
+  font-size: 40px;
+  font-family: bold;
+  text-align: center;
+  margin-top: 12%;
+  margin-bottom: 20px;
+}
+.Questions p {
+  font-size: 20px;
+  margin-top: 67px;
+}
+.Questions .pix7 {
+  width: 15px;
+  margin-left: 30%;
+  display: none;
+}
+.Questions .line {
+  width: 94%;
+}
+.Questions .para {
+  margin-bottom: 61px;
+}
+.Questions .bbb {
+  display: block;
+}
+
+.startups {
+  position: relative;
+}
+.startups .pic {
+  position: absolute;
+  top: 80px;
+  margin-left: 4%;
+  width: 92%;
+}
+.startups h3 {
+  font-size: 20px;
+  font-family: bold;
+  position: absolute;
+  top: 84px;
+  left: 15%;
+}
+.startups .line4 {
+  width: 60%;
+  margin-left: 22%;
+  height: 3px;
+  position: absolute;
+  top: 107px;
+}
+.startups .slider {
+  text-align: center;
+  padding: 13%;
+  padding-top: 26%;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 20;
+}
+.startups .slider .diamond {
+  margin-left: 90px;
+  width: 40%;
+  margin-right: 90%;
+}
+.startups .slider .flite {
+  width: 90%;
+}
+.startups .slider .sign {
+  width: 50%;
+}
+.startups .bb {
+  position: absolute;
+  top: 58%;
+  left: 86%;
+  width: 9%;
+}
+.startups .vv {
+  position: absolute;
+  top: 58%;
+  right: 86%;
+  width: 9%;
+}
+.startups .nv {
+  position: absolute;
+  top: 82%;
+  width: 65%;
+  left: 24%;
+}
+.startups .rt {
+  position: absolute;
+  left: 8%;
+  top: 87%;
+  z-index: 999;
+  width: 3%;
+}
+
+.footr {
+  background-color: black;
+  color: white;
+  padding: 57px;
+  margin-top: 12%;
+  padding-bottom: 0px;
+}
+.footr .row {
+  margin-left: 9%;
+}
+.footr .row h3 {
+  color: white;
+  font-size: 30px;
+  font-family: bold;
+  margin-bottom: 20%;
+  margin-top: 20%;
+}
+.footr .row a {
+  text-decoration: none;
+  color: white;
+}
+.footr .row p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: regular;
+}
+.footr .logo {
+  margin-top: 5%;
+  margin-left: 28%;
+}
+.footr .text {
+  margin-left: 20px;
+  width: 20%;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  header img {
+    width: 225px;
+  }
+  header .menu {
+    max-height: unset;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style: none;
+  }
+  header .menu li a {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+  }
+  header .hamburger {
+    display: none;
+  }
+
+  .banner .text h1 {
+    color: black;
+    font-size: 32px;
+    margin-left: 5%;
+    font-family: bold;
+    line-height: 65px;
+    margin-top: 20%;
+  }
+  .banner .text .btn1 {
+    font-family: bold;
+    margin-left: 7%;
+    margin-top: 30px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 7px;
+    font-size: 20px;
+  }
+  .banner .text .btn2 {
+    margin-left: 7px;
+    background-color: white;
+    border: none;
+    padding: 7px;
+    font-family: bold;
+    font-size: 20px;
+  }
+  .banner .picture .bnnr {
+    margin-left: 46%;
+    margin-top: -43%;
+    width: 55%;
+  }
+
+  .built {
+    margin-top: 5%;
+  }
+  .built h3 {
+    font-size: 35px;
+    text-align: center;
+    font-family: bold;
+  }
+  .built .pix1 {
+    margin-left: 190px;
+    margin-top: 55px;
+  }
+  .built .pix2 {
+    margin-top: 55px;
+    margin-left: 193px;
+  }
+
+  .founder {
+    background-color: white;
+    padding-top: 5%;
+  }
+  .founder h3 {
+    font-size: 35px;
+    margin-left: 8%;
+    font-family: bold;
+    margin-top: 30px;
+  }
+  .founder .row {
+    margin-top: 35px;
+  }
+  .founder .row p {
+    margin-bottom: 70px;
+  }
+  .founder .slide .pt {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .dis {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 40%;
+    padding: 12px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .dis .arow {
+    position: absolute;
+    left: 66px;
+    top: 6px;
+  }
+  .founder .slide .dis:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+  .founder .slide .pw {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .disc {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 40%;
+    padding: 12px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .disc .arow-2 {
+    position: absolute;
+    left: 66px;
+    top: 6px;
+  }
+  .founder .slide .disc:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+  .founder .slide .pe {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .disco {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 40%;
+    padding: 12px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .disco .arow-3 {
+    position: absolute;
+    left: 67px;
+    top: 6px;
+  }
+  .founder .slide .disco:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+  .founder .slide .pr {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .discov {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 40%;
+    padding: 10px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .discov .arow-4 {
+    position: absolute;
+    left: 67px;
+    top: 6px;
+  }
+  .founder .slide .discov:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+
+  .join {
+    margin-bottom: 50px;
+  }
+  .join .pic {
+    width: 80%;
+    margin-left: 55px;
+    margin-top: -40px;
+  }
+  .join h4 {
+    font-size: 40px;
+    font-family: bold;
+    margin-top: 10%;
+    margin-left: 0px;
+  }
+  .join p {
+    font-size: 30px;
+    font-family: bold;
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+  .join .btn {
+    font-family: bold;
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .investor {
+    background-color: white;
+  }
+  .investor .pixs {
+    width: 85%;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .investor h4 {
+    font-size: 45px;
+    margin-top: 16%;
+    margin-left: 15%;
+    font-family: bold;
+  }
+  .investor p {
+    margin-left: 15%;
+    font-family: bold;
+    margin-top: 30px;
+    font-size: 28px;
+  }
+  .investor .btn {
+    font-size: 20px;
+    margin-left: 15%;
+    background-color: black;
+    color: white;
+    font-family: bold;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .Questions h4 {
+    font-size: 40px;
+    font-family: bold;
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 20px;
+  }
+  .Questions p {
+    font-size: 20px;
+    margin-top: 67px;
+  }
+  .Questions .pix7 {
+    width: 15px;
+    margin-left: 30%;
+    display: none;
+  }
+  .Questions .line {
+    width: 94%;
+  }
+  .Questions .para {
+    margin-bottom: 61px;
+  }
+  .Questions .bbb {
+    display: block;
+  }
+
+  .startups {
+    position: relative;
+  }
+  .startups .pic {
+    position: absolute;
+    top: 80px;
+    margin-left: 4%;
+    width: 92%;
+  }
+  .startups h3 {
+    font-size: 30px;
+    font-family: bold;
+    position: absolute;
+    top: 97px;
+    left: 27%;
+  }
+  .startups .line4 {
+    width: 60%;
+    margin-left: 22%;
+    height: 3px;
+    position: absolute;
+    top: 136px;
+  }
+  .startups .slider {
+    text-align: center;
+    padding: 13%;
+    padding-top: 26%;
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+  .startups .slider .diamond {
+    margin-left: 20px;
+    width: 70%;
+  }
+  .startups .slider .flite {
+    width: 100%;
+  }
+  .startups .slider .sign {
+    width: 50%;
+  }
+  .startups .bb {
+    position: absolute;
+    top: 46%;
+    left: 86%;
+  }
+  .startups .vv {
+    position: absolute;
+    top: 46%;
+    right: 86%;
+  }
+  .startups .nv {
+    position: absolute;
+    top: 69%;
+    width: 65%;
+    left: 24%;
+  }
+  .startups .rt {
+    position: absolute;
+    left: 8%;
+    top: 72%;
+    z-index: 999;
+    width: 3%;
+  }
+
+  .footr {
+    background-color: black;
+    color: white;
+    padding: 57px;
+    margin-top: 1%;
+    padding-bottom: 0px;
+  }
+  .footr .row {
+    margin-left: 9%;
+  }
+  .footr .row h3 {
+    color: white;
+    font-size: 30px;
+    font-family: bold;
+    margin-bottom: 20%;
+  }
+  .footr .row a {
+    text-decoration: none;
+    color: white;
+  }
+  .footr .row p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: regular;
+  }
+  .footr .logo {
+    margin-top: 5%;
+    margin-left: 28%;
+  }
+  .footr .text {
+    margin-left: 20px;
+    width: 20%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header img {
+    width: 80%;
+    margin-left: 75px;
+    margin-top: 25px;
+  }
+  header .menu {
+    max-height: unset;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style: none;
+  }
+  header .menu li a {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: 30px;
+    font-family: bold;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .btn {
+    background-color: white;
+    color: black;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-family: bold;
+  }
+
+  .banner .text h1 {
+    color: black;
+    font-size: 49px;
+    margin-left: 7%;
+    font-family: bold;
+    line-height: 65px;
+    margin-top: 20%;
+  }
+  .banner .text .btn1 {
+    font-family: bold;
+    margin-left: 7%;
+    margin-top: 30px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 7px;
+    font-size: 20px;
+  }
+  .banner .text .btn2 {
+    margin-left: 7px;
+    background-color: white;
+    border: none;
+    padding: 7px;
+    font-family: bold;
+    font-size: 20px;
+  }
+  .banner .picture .bnnr {
+    margin-left: 46%;
+    margin-top: -37%;
+    width: 55%;
+  }
+
+  .built {
+    margin-top: 8%;
+  }
+  .built h3 {
+    font-size: 35px;
+    margin-left: 8%;
+    font-family: bold;
+  }
+  .built .pix1 {
+    margin-left: 190px;
+    margin-top: 55px;
+  }
+  .built .pix2 {
+    margin-top: 55px;
+    margin-left: 95px;
+  }
+
+  .founder {
+    background-color: white;
+    padding-top: 5%;
+    position: relative;
+  }
+  .founder .pex2 {
+    width: 90%;
+  }
+  .founder h3 {
+    font-size: 35px;
+    margin-left: 8%;
+    font-family: regular;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .founder .slide .pt {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .dis {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 57%;
+    padding: 12px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .dis .arow {
+    position: absolute;
+    left: 66px;
+    top: 6px;
+  }
+  .founder .slide .dis:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+  .founder .slide .pw {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .disc {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 57%;
+    padding: 12px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .disc .arow-2 {
+    position: absolute;
+    left: 66px;
+    top: 6px;
+  }
+  .founder .slide .disc:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+  .founder .slide .pe {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .disco {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 57%;
+    padding: 12px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .disco .arow-3 {
+    position: absolute;
+    left: 67px;
+    top: 6px;
+  }
+  .founder .slide .disco:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+  .founder .slide .pr {
+    margin-bottom: 70px;
+    font-family: regular;
+    margin-left: 65px;
+  }
+  .founder .slide .discov {
+    background-color: white;
+    color: black;
+    position: relative;
+    margin-top: -9%;
+    left: 57%;
+    padding: 10px;
+    font-family: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .founder .slide .discov .arow-4 {
+    position: absolute;
+    left: 67px;
+    top: 6px;
+  }
+  .founder .slide .discov:hover {
+    box-shadow: 2px 2px 2px 2px lightgray;
+    transition: 1s;
+    opacity: 1;
+  }
+
+  .join {
+    margin-bottom: 50px;
+  }
+  .join .pic {
+    width: 80%;
+    margin-left: 55px;
+    margin-top: -40px;
+  }
+  .join h4 {
+    font-size: 40px;
+    font-family: bold;
+    margin-top: 27%;
+  }
+  .join p {
+    font-size: 30px;
+    font-family: bold;
+    margin-top: 20px;
+  }
+  .join .btn {
+    font-family: bold;
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .investor {
+    background-color: white;
+  }
+  .investor .pixs {
+    width: 85%;
+    margin-top: 40px;
+  }
+  .investor h4 {
+    font-size: 45px;
+    margin-top: 45%;
+    margin-left: 15%;
+    font-family: bold;
+  }
+  .investor p {
+    margin-left: 15%;
+    font-family: bold;
+    margin-top: 30px;
+    font-size: 28px;
+  }
+  .investor .btn {
+    font-size: 20px;
+    margin-left: 15%;
+    background-color: black;
+    color: white;
+    font-family: bold;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .Questions h4 {
+    font-size: 40px;
+    font-family: bold;
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 20px;
+  }
+  .Questions p {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  .Questions .pix7 {
+    width: 15px;
+    margin-left: 86%;
+    display: block;
+  }
+  .Questions .line {
+    width: 94%;
+  }
+  .Questions .para {
+    margin-bottom: 99px;
+  }
+  .Questions .bbb {
+    display: block;
+  }
+  .Questions .bbb .line {
+    height: 2px;
+  }
+
+  .startups {
+    position: relative;
+  }
+  .startups .pic {
+    position: absolute;
+    top: 80px;
+    margin-left: 4%;
+    width: 92%;
+  }
+  .startups h3 {
+    font-size: 30px;
+    font-family: bold;
+    position: absolute;
+    top: 130px;
+    left: 35%;
+  }
+  .startups .line4 {
+    width: 60%;
+    margin-left: 21%;
+    height: 3px;
+    position: absolute;
+    top: 200px;
+  }
+  .startups .slider {
+    text-align: center;
+    padding: 10%;
+    padding-top: 20%;
+    margin-right: 4%;
+  }
+  .startups .slider .diamond {
+    margin-left: 40px;
+    width: 70%;
+    margin-left: 40px;
+  }
+  .startups .slider .flite {
+    width: 100%;
+  }
+  .startups .slider .sign {
+    width: 50%;
+  }
+  .startups .bb {
+    position: absolute;
+    top: 60%;
+    left: 89%;
+    width: 6%;
+  }
+  .startups .vv {
+    position: absolute;
+    top: 60%;
+    right: 89%;
+    width: 6%;
+  }
+  .startups .nv {
+    position: absolute;
+    top: 84%;
+    width: 65%;
+    left: 24%;
+  }
+  .startups .rt {
+    position: absolute;
+    left: 8%;
+    top: 82%;
+    z-index: 999;
+    width: 3%;
+  }
+
+  .footr {
+    background-color: black;
+    color: white;
+    padding: 120px;
+    margin-top: 12%;
+    padding-bottom: 0px;
+  }
+  .footr .row {
+    margin-left: 9%;
+  }
+  .footr .row h3 {
+    color: white;
+    font-size: 30px;
+    font-family: bold;
+    margin-bottom: 20%;
+  }
+  .footr .row a {
+    text-decoration: none;
+    color: white;
+  }
+  .footr .row p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: regular;
+  }
+  .footr .logo {
+    margin-top: 5%;
+    margin-left: 28%;
+  }
+  .footr .text {
+    margin-left: 20px;
+    width: 20%;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
